@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hilltop-deploy
+  name: group2-deploy
 spec:
   replicas: 3
   selector:
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: nodejs
-        image: chafah/hilltop-nodejs-app:new
+        image: tekohteriss264/group2-docker-eks-nodejs-app:new
         ports:
         - containerPort: 8080
